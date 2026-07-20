@@ -70,7 +70,6 @@
             border: 1px solid var(--border-glass);
             box-shadow: var(--shadow-glass), 0 0 40px rgba(37, 99, 235, 0.08);
             z-index: 1;
-            margin: 0 auto;
         }
 
         bg-wc {
@@ -448,12 +447,9 @@
         .page-header {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             margin-bottom: 14px;
             padding: 4px 0;
-            width: 100%;
-            box-sizing: border-box;
-            flex-wrap: nowrap;
         }
         .page-header .back-btn-page {
             width: 36px;
@@ -491,16 +487,13 @@
         .main-content {
             flex: 1;
             overflow-y: auto;
-            overflow-x: hidden;
-            padding: 0 16px 20px;
+            padding: 0 20px 20px;
             scroll-behavior: smooth;
             position: relative;
             -webkit-overflow-scrolling: touch;
             overscroll-behavior: contain;
             z-index: 3;
             display: none;
-            width: 100%;
-            box-sizing: border-box;
         }
         .main-content.visible {
             display: block;
@@ -1079,15 +1072,12 @@
 
         .hasil-deteksi {
             margin-top: 18px;
-            padding: 16px 12px;
+            padding: 20px;
             display: none;
             background: var(--bg-glass) !important;
             backdrop-filter: blur(12px) !important;
             border: 1px solid var(--border-glass) !important;
             border-radius: var(--radius-sm) !important;
-            width: 100%;
-            max-width: 100%;
-            box-sizing: border-box;
         }
         .hasil-deteksi.show {
             display: block;
@@ -1604,7 +1594,6 @@
             body {
                 padding: 0;
                 background: #0F172A;
-                overflow-x: hidden;
             }
             .app-container {
                 max-width: 100%;
@@ -1650,16 +1639,6 @@
             .cover-title .app-name { font-size: 28px; }
             .university-badge .uni-name { font-size: 11px; }
             .cover-desc { font-size: 11.5px; }
-            #page-deteksi { padding: 0 8px 12px !important; }
-            .deteksi-form { padding: 12px 10px !important; }
-            .face-card { padding: 12px 10px !important; }
-            .checklist-card { padding: 12px 10px !important; }
-            .face-item { padding: 8px 8px !important; }
-            .check-item { padding: 6px 6px !important; }
-            .deteksi-form .form-row { grid-template-columns: 1fr !important; gap: 8px !important; }
-            .deteksi-tab { padding: 6px 8px !important; font-size: 10px !important; }
-            .hasil-deteksi { padding: 12px 10px !important; }
-            .hasil-instrumen { padding: 12px 10px !important; }
         }
 
         @media (min-width: 481px) and (max-width: 768px) {
@@ -1957,20 +1936,16 @@
 
         /* ===== PERBAIKAN PAGE DETEKSI ===== */
         #page-deteksi {
-            padding: 0 12px 16px;
+            padding: 0 20px 20px;
             max-width: 100%;
             box-sizing: border-box;
-            width: 100%;
-            overflow-x: hidden;
         }
 
         #page-deteksi .page-header {
             margin-bottom: 14px;
             padding: 4px 0;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             gap: 8px;
-            width: 100%;
-            box-sizing: border-box;
         }
 
         #page-deteksi .page-title-area h2 {
@@ -1994,10 +1969,6 @@
             scrollbar-width: thin;
             scrollbar-color: var(--primary-light) transparent;
             max-width: 100%;
-            width: 100%;
-            box-sizing: border-box;
-            padding-left: 2px;
-            padding-right: 2px;
         }
 
         .deteksi-tabs::-webkit-scrollbar {
@@ -2058,7 +2029,7 @@
         }
 
         .deteksi-form {
-            padding: 14px 12px;
+            padding: 16px;
             background: var(--bg-glass) !important;
             backdrop-filter: blur(12px) !important;
             border: 1px solid var(--border-glass) !important;
@@ -2066,7 +2037,6 @@
             width: 100%;
             max-width: 100%;
             box-sizing: border-box;
-            margin: 0;
         }
 
         .deteksi-form .form-group {
@@ -2098,7 +2068,6 @@
             appearance: none;
             box-sizing: border-box;
             max-width: 100%;
-            min-width: 0;
         }
 
         .deteksi-form .form-group select {
@@ -2160,7 +2129,7 @@
             backdrop-filter: blur(12px) !important;
             border: 1px solid var(--border-glass) !important;
             border-radius: var(--radius-sm) !important;
-            padding: 14px 12px;
+            padding: 16px;
             margin-bottom: 14px;
             width: 100%;
             max-width: 100%;
@@ -2194,15 +2163,13 @@
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
-            padding: 10px 10px;
+            padding: 10px 12px;
             background: rgba(255, 255, 255, 0.04);
             border-radius: 10px;
             margin-bottom: 8px;
             border: 1px solid rgba(255, 255, 255, 0.06);
-            gap: 8px;
+            gap: 10px;
             flex-wrap: wrap;
-            width: 100%;
-            box-sizing: border-box;
         }
 
         .face-item .face-label {
@@ -2229,7 +2196,7 @@
         }
 
         .face-toggle button {
-            padding: 5px 10px;
+            padding: 5px 12px;
             border-radius: var(--radius-full);
             border: 1px solid rgba(255, 255, 255, 0.15);
             background: transparent;
@@ -2240,8 +2207,6 @@
             transition: var(--transition);
             font-family: inherit;
             white-space: nowrap;
-            min-width: 52px;
-            text-align: center;
         }
 
         .face-toggle button.selected-ya {
@@ -2262,7 +2227,7 @@
             backdrop-filter: blur(12px) !important;
             border: 1px solid var(--border-glass) !important;
             border-radius: var(--radius-sm) !important;
-            padding: 14px 12px;
+            padding: 16px;
             margin-bottom: 14px;
             width: 100%;
             max-width: 100%;
@@ -2296,16 +2261,14 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 8px 8px;
+            padding: 8px 10px;
             background: rgba(255, 255, 255, 0.03);
             border-radius: 10px;
             margin-bottom: 6px;
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: var(--transition);
-            gap: 8px;
+            gap: 10px;
             flex-wrap: wrap;
-            width: 100%;
-            box-sizing: border-box;
         }
 
         .check-item:hover {
@@ -2333,13 +2296,12 @@
             accent-color: var(--primary);
             cursor: pointer;
             flex-shrink: 0;
-            min-width: 18px;
         }
 
         /* ===== HASIL INSTRUMEN ===== */
         .hasil-instrumen {
             margin-top: 14px;
-            padding: 14px 12px;
+            padding: 14px;
             display: none;
             border-radius: var(--radius-sm);
             animation: fadeUp 0.4s ease;
@@ -2405,40 +2367,7 @@
         .deteksi-panel .btn-gsheets {
             margin-top: 4px;
         }
-
-        /* ===== GLOBAL MOBILE FIX ===== */
-        @media (max-width: 480px) {
-            .main-content { padding: 0 12px 16px !important; }
-            .page { width: 100%; box-sizing: border-box; }
-            .glass-card { width: 100% !important; max-width: 100% !important; }
-            .health-card { padding: 16px 14px !important; }
-            .tips-card { padding: 12px 14px !important; }
-            .quick-grid { gap: 8px !important; }
-            .quick-grid .q-item { padding: 14px 6px !important; }
-            .articles .article-item { padding: 12px 12px !important; }
-            .edu-item { padding: 14px 12px !important; }
-            .budaya-card { padding: 16px 14px !important; }
-            .ai-chat-beranda { padding: 12px !important; }
-            .ai-groq-chat { padding: 12px !important; }
-            .add-obat { padding: 12px !important; }
-            .add-obat .row { gap: 8px !important; }
-            .add-obat .row input { min-width: 80px; padding: 8px 10px !important; font-size: 13px !important; }
-            .obat-item { padding: 12px 12px !important; }
-            .detail-body { padding: 0 14px 24px !important; }
-            .detail-body .content-section { padding: 18px 14px !important; }
-        }
-
-        /* Mencegah horizontal scroll di seluruh aplikasi */
-        .app-container * {
-            max-width: 100%;
-        }
-
-        /* Fix untuk form input agar tidak melebar */
-        input, select, textarea, button {
-            max-width: 100%;
-        }
-
-    </style>
+</style>
 <base target="_blank">
 <base target="_blank">
 </head>
@@ -2569,33 +2498,21 @@
                 </div>
 
                 <div class="quick-grid stagger">
-                    <button class="q-item" onclick="navigateTo('budaya')">
-                        <div class="icon-wrap"><i class="fas fa-hand-holding-heart"></i></div>
-                        <span class="label">Hari Mapalus</span>
+                    <button class="q-item" onclick="navigateTo('edukasi')">
+                        <div class="icon-wrap"><i class="fas fa-book-open"></i></div>
+                        <span class="label">Edukasi</span>
                     </button>
                     <button class="q-item" onclick="navigateTo('deteksi')">
                         <div class="icon-wrap"><i class="fas fa-heartbeat"></i></div>
                         <span class="label">Monitoring Kesehatan</span>
                     </button>
                     <button class="q-item" onclick="navigateTo('budaya')">
-                        <div class="icon-wrap"><i class="fas fa-utensils"></i></div>
-                        <span class="label">Makanan Sehat</span>
-                    </button>
-                    <button class="q-item" onclick="navigateTo('budaya')">
-                        <div class="icon-wrap"><i class="fas fa-running"></i></div>
-                        <span class="label">Aktivitas Fisik</span>
+                        <div class="icon-wrap"><i class="fas fa-hand-holding-heart"></i></div>
+                        <span class="label">Hari Mapalus</span>
                     </button>
                     <button class="q-item" onclick="openAIPage()">
                         <div class="icon-wrap"><i class="fas fa-robot"></i></div>
                         <span class="label">Konsultasi AI</span>
-                    </button>
-                    <button class="q-item" onclick="navigateTo('deteksi')">
-                        <div class="icon-wrap"><i class="fas fa-clinic-medical"></i></div>
-                        <span class="label">My Posyandu</span>
-                    </button>
-                    <button class="q-item" onclick="navigateTo('budaya')">
-                        <div class="icon-wrap"><i class="fas fa-users"></i></div>
-                        <span class="label">Forum PKK</span>
                     </button>
                 </div>
 
@@ -3177,10 +3094,7 @@
                 <span class="label">AI-PTM</span>
                 <span class="badge-dot pulse-dot"></span>
             </button>
-            <button class="nav-item" onclick="document.getElementById('setupGuide').style.display='block'" title="Panduan Setup Google Sheets">
-                <span class="icon"><i class="fas fa-cog"></i></span>
-                <span class="label">Setup</span>
-            </button>
+
         </div>
 
     </div><!-- /app-container -->
