@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMART PKK</string>
+    <string name="no_file_picker">Aplikasi pemilih file tidak tersedia.</string>
+    <string name="no_handler">Tautan ini tidak dapat dibuka.</string>
+</resources>
